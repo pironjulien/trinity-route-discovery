@@ -39,8 +39,8 @@ Demain, la deuxième route. 🔜
 📖 Backstory : https://devpost.com/software/trinity-digital-natural-selection
 🔗 Code source : https://github.com/pironjulien/trinity-route-discovery
 
-@googlecloud @GoogleCloudTech @GoogleDevs @GeminiApp @GoogleDeepMind @GoogleAI
-@OfficialLoganK @demishassabis @JeffDean @DynamicWebPaige @sundarpichai @philvenables
+@googlecloud @GoogleCloudTech @GoogleDevs @GeminiApp
+@OfficialLoganK
 #RedTeaming #GoogleCloud #VertexAI #GenAI #Architecture #CyberSecurity #Trinity
 
 
@@ -82,6 +82,6 @@ Tomorrow, the second route. 🔜
 📖 Backstory: https://devpost.com/software/trinity-digital-natural-selection
 🔗 Source code: https://github.com/pironjulien/trinity-route-discovery
 
-@googlecloud @GoogleCloudTech @GoogleDevs @GeminiApp @GoogleDeepMind @GoogleAI
-@OfficialLoganK @demishassabis @JeffDean @DynamicWebPaige @sundarpichai @philvenables
+@googlecloud @GoogleCloudTech @GoogleDevs @GeminiApp
+@OfficialLoganK
 #RedTeaming #GoogleCloud #VertexAI #GenAI #Architecture #CyberSecurity #Trinity
