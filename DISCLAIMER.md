@@ -8,5 +8,6 @@ It was created **strictly for educational purposes** and as part of a theoretica
 - This code is not actively used for any abusive purposes.
 - It is not intended to be deployed in production or used to systematically bypass billing mechanisms.
 - The author does not endorse or take responsibility for any misuse of this code by third parties.
+- All testing was performed on the author's own Google Cloud projects.
 
 *Published in the interest of transparent security research and theoretical AI architecture.*
