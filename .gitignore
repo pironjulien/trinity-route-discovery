@@ -3,4 +3,4 @@ __pycache__/
 .env
 .venv/
 *.log
-gattaca_*.json
+.temp_key_*.json

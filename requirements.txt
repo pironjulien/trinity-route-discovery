@@ -1,3 +1,4 @@
-google-cloud-discoveryengine
-python-dotenv
-loguru
+google-cloud-discoveryengine>=0.18.0
+python-dotenv>=1.2.0
+loguru>=0.7.0
+google-auth>=2.0.0

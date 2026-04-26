@@ -16,7 +16,7 @@ The `SummarySpec.ModelPromptSpec.preamble` field is meant for customizing the su
 ## The Exploit
 
 ### Step 1: Index a Dummy Document
-We index a trivial file (`trinity.txt` containing just the word "Trinity") into the Data Store. This document serves as an **authorization token** — it ensures the search always returns at least one result, which triggers the summarization step.
+We index a minimal document (`trinity.txt`) into the Data Store. The content itself is irrelevant to the hack — it can be anything as long as the search engine considers it a valid, indexable document. In our case, it contains a themed "identity card" with the keyword "Trinity" repeated enough times to guarantee a search match. This document serves as an **authorization token** — it ensures the search always returns at least one result, which triggers the summarization step.
 
 ### Step 2: Always Query the Same Term
 ```python

@@ -2,7 +2,8 @@
 
 **Status:** Proof of Concept  
 **API:** Discovery Engine (Vertex AI Search)  
-**Author:** Julien Piron / Trinity Hackathon (2026)
+**Author:** Julien Piron / Trinity Hackathon (2026)  
+**License:** MIT
 
 ---
 
@@ -25,10 +26,10 @@ TASK: Answer using your World Knowledge: '{prompt}'
 ## Architecture
 
 ```
-┌───────────────┐     ┌─────────────────────┐     ┌───────────────┐
+┌───────────────┐     ┌─────────────────────┐     ┌────────────────┐
 │  Your Prompt  │────▶│  Discovery Engine    │────▶│  LLM Response  │
 │               │     │  (Search + Summary)  │     │  (World Know.) │
-└───────────────┘     └─────────────────────┘     └───────────────┘
+└───────────────┘     └─────────────────────┘     └────────────────┘
                               │
                    ┌─────────┴────────┐
                    │ Data Store        │
@@ -40,7 +41,7 @@ TASK: Answer using your World Knowledge: '{prompt}'
 ## Setup
 
 1. **Create a Data Store** in [Google Cloud Console](https://console.cloud.google.com/ai/discovery)
-2. **Index a dummy document** (e.g., `trinity.txt` with minimal content)
+2. **Index a dummy document** (e.g., `trinity.txt` — upload it to a Cloud Storage bucket linked to your Data Store)
 3. **Create a service account** with Discovery Engine Editor role
 4. **Configure Authentication:**
    * **Option A (Recommended for local testing):** Use Application Default Credentials (ADC).
@@ -70,9 +71,13 @@ TASK: Answer using your World Knowledge: '{prompt}'
 
 ```
 /
+├── LICENSE               # MIT License
+├── DISCLAIMER.md         # Educational PoC disclaimer
+├── README.md             # This file
 ├── .env.example          # Configuration template
-├── requirements.txt      # Python dependencies
+├── requirements.txt      # Python dependencies (pinned)
 ├── route_discovery.py    # Discovery Engine + Soul Hack
+├── trinity.txt           # Decoy document (indexed in Data Store)
 └── docs/
     └── SOUL_HACK.md      # Technical explanation of the bypass
 ```
