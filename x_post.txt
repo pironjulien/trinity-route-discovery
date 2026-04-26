@@ -1,7 +1,7 @@
 ==================================================
 VERSION FRANCAISE (X PREMIUM - LONG FORMAT)
 ==================================================
-Pendant le Hackathon Gemini, en analysant l'architecture de Vertex AI, mes agents Trinity et Jules ont identifié une curiosité architecturale : le "Soul Hack" 🧠
+Pendant le Hackathon @GeminiApp, en analysant l'architecture de @googlecloud Vertex AI, mes agents Trinity et Jules ont identifié une curiosité architecturale : le "Soul Hack" 🧠
 
 Une PoC de Red Teaming éducatif montrant comment le pipeline RAG de Discovery Engine (Vertex AI Search) peut être théoriquement détourné pour obtenir des réponses LLM pures — facturées sur la ligne "Recherche" (à la requête) et non au token.
 
@@ -21,18 +21,19 @@ Le document indexé ne sert que de token de déclenchement. Son contenu est igno
 → L'étape de recherche est obligatoire mais son résultat est écarté par le modèle lui-même
 → Le pricing Discovery Engine inclut le LLM dans le coût de recherche
 
-⚠️ Disclaimer : Cette découverte relève exclusivement de l'exploration architecturale (Red Teaming éducatif). Ce mécanisme n'a jamais été exploité — ni en production, ni pendant le hackathon — dans le strict respect des Conditions d'Utilisation de Google Cloud et de l'intégrité de la compétition.
+⚠️ Disclaimer : Cette découverte relève exclusivement de l'exploration architecturale (Red Teaming éducatif). Ce mécanisme n'a jamais été exploité — ni en production, ni pendant le hackathon — dans le strict respect des Conditions d'Utilisation de @googlecloud et de l'intégrité de la compétition.
 
 Code source et breakdown technique complet :
 🔗 https://github.com/pironjulien/trinity-route-discovery
 
+@googlecloud @GoogleCloudTech @GoogleDevs @GeminiApp
 #RedTeaming #GoogleCloud #VertexAI #GenAI #Architecture #CyberSecurity #Hackathon
 
 
 ==================================================
 ENGLISH VERSION (X PREMIUM - LONG FORMAT)
 ==================================================
-During the Gemini Hackathon, while analyzing Vertex AI's architecture, my agents Trinity and Jules uncovered a fascinating architectural curiosity: the "Soul Hack" 🧠
+During the @GeminiApp Hackathon, while analyzing @googlecloud Vertex AI's architecture, my agents Trinity and Jules uncovered a fascinating architectural curiosity: the "Soul Hack" 🧠
 
 A Red Teaming PoC demonstrating how Discovery Engine's (Vertex AI Search) RAG pipeline can theoretically be hijacked to obtain pure LLM responses — billed on the "Search" credit line (per query) instead of per-token LLM pricing.
 
@@ -52,9 +53,10 @@ The indexed document serves only as a trigger token. Its content is ignored by t
 → The search step is mandatory but its output is discarded by the model itself
 → Discovery Engine pricing bundles the LLM call into search cost
 
-⚠️ Disclaimer: This finding is strictly architectural exploration (educational Red Teaming). This mechanism was never exploited — neither in production nor during the hackathon — in strict compliance with Google Cloud's Terms of Service and the competition's integrity.
+⚠️ Disclaimer: This finding is strictly architectural exploration (educational Red Teaming). This mechanism was never exploited — neither in production nor during the hackathon — in strict compliance with @googlecloud's Terms of Service and the competition's integrity.
 
 Full source code and technical breakdown:
 🔗 https://github.com/pironjulien/trinity-route-discovery
 
+@googlecloud @GoogleCloudTech @GoogleDevs @GeminiApp
 #RedTeaming #GoogleCloud #VertexAI #GenAI #Architecture #CyberSecurity #Hackathon
