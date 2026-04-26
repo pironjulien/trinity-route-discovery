@@ -42,14 +42,20 @@ TASK: Answer using your World Knowledge: '{prompt}'
 1. **Create a Data Store** in [Google Cloud Console](https://console.cloud.google.com/ai/discovery)
 2. **Index a dummy document** (e.g., `trinity.txt` with minimal content)
 3. **Create a service account** with Discovery Engine Editor role
-4. **Export the key** as JSON and base64-encode it:
-   ```bash
-   base64 -w0 service-account-key.json
-   ```
+4. **Configure Authentication:**
+   * **Option A (Recommended for local testing):** Use Application Default Credentials (ADC).
+     ```bash
+     gcloud auth application-default login
+     ```
+   * **Option B (For CI/CD or specific service accounts):** Export the key as JSON and base64-encode it:
+     ```bash
+     base64 -w0 service-account-key.json
+     ```
 5. **Configure `.env`:**
    ```bash
    cp .env.example .env
-   # Fill in your values
+   # Fill in your project ID and data store ID. 
+   # Add the base64 key only if using Option B.
    ```
 6. **Install dependencies:**
    ```bash
