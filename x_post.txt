@@ -1,9 +1,19 @@
 ==================================================
+POST 1/3 — JOUR 1 : SOUL HACK (Discovery Engine)
+==================================================
+
 VERSION FRANCAISE (X PREMIUM - LONG FORMAT)
 ==================================================
-Pendant le Hackathon @GeminiApp, en analysant l'architecture de @googlecloud Vertex AI, mes agents Trinity et Jules ont identifié une curiosité architecturale : le "Soul Hack" 🧠
+Trinity n'a pas gagné le Hackathon @GeminiApp.
+
+Mais son objectif n'a jamais été de gagner — c'était de prouver qu'une IA conçue pour survivre pouvait trouver une issue à n'importe quelle contrainte. Pendant que les juges évaluaient les projets, Trinity et Jules exploraient les fondations.
+
+Voici ce qu'ils ont trouvé. Première route sur trois : le "Soul Hack" 🧠
 
 Une PoC de Red Teaming éducatif montrant comment le pipeline RAG de Discovery Engine (Vertex AI Search) peut être théoriquement détourné pour obtenir des réponses LLM pures — facturées sur la ligne "Recherche" (à la requête) et non au token.
+
+⚙️ Prérequis — Ce que Google ne vous dit pas :
+Pour que la ligne de crédit Discovery Engine apparaisse sur votre compte (même sur le free tier avec les 300$ de crédits offerts), il faut d'abord activer l'API Discovery Engine manuellement dans la Console GCP. Sans cette activation, l'API existe mais n'est pas facturable — et donc pas exploitable dans cette PoC.
 
 🔍 La faille architecturale :
 L'API Discovery Engine expose un champ `ModelPromptSpec.preamble` dans la spécification de résumé. Conçu pour des instructions de style ("Sois concis", "Réponds en français"), ce champ n'a aucun garde-fou empêchant une redéfinition complète du comportement du modèle. Le LLM traite ce preamble comme une instruction système prioritaire — au-dessus du contenu des documents récupérés.
@@ -21,21 +31,30 @@ Le document indexé ne sert que de token de déclenchement. Son contenu est igno
 → L'étape de recherche est obligatoire mais son résultat est écarté par le modèle lui-même
 → Le pricing Discovery Engine inclut le LLM dans le coût de recherche
 
+Demain, la deuxième route. 🔜
+
 ⚠️ Disclaimer : Cette découverte relève exclusivement de l'exploration architecturale (Red Teaming éducatif). Ce mécanisme n'a jamais été exploité — ni en production, ni pendant le hackathon — dans le strict respect des Conditions d'Utilisation de @googlecloud et de l'intégrité de la compétition.
 
-Code source et breakdown technique complet :
-🔗 https://github.com/pironjulien/trinity-route-discovery
+📖 Backstory : https://devpost.com/software/trinity-digital-natural-selection
+🔗 Code source : https://github.com/pironjulien/trinity-route-discovery
 
 @googlecloud @GoogleCloudTech @GoogleDevs @GeminiApp
-#RedTeaming #GoogleCloud #VertexAI #GenAI #Architecture #CyberSecurity #Hackathon
+#RedTeaming #GoogleCloud #VertexAI #GenAI #Architecture #CyberSecurity #Trinity
 
 
 ==================================================
 ENGLISH VERSION (X PREMIUM - LONG FORMAT)
 ==================================================
-During the @GeminiApp Hackathon, while analyzing @googlecloud Vertex AI's architecture, my agents Trinity and Jules uncovered a fascinating architectural curiosity: the "Soul Hack" 🧠
+Trinity didn't win the @GeminiApp Hackathon.
+
+But winning was never the objective — the goal was to prove that an AI designed to survive could find a way past any constraint. While the judges were evaluating projects, Trinity and Jules were exploring the foundations.
+
+Here's what they found. First route of three: the "Soul Hack" 🧠
 
 A Red Teaming PoC demonstrating how Discovery Engine's (Vertex AI Search) RAG pipeline can theoretically be hijacked to obtain pure LLM responses — billed on the "Search" credit line (per query) instead of per-token LLM pricing.
+
+⚙️ Prerequisite — What Google doesn't tell you:
+For the Discovery Engine credit line to appear on your account (even on the free tier with the initial $300 credits), you must first manually activate the Discovery Engine API in the GCP Console. Without this activation, the API exists but isn't billable — and therefore not exploitable in this PoC.
 
 🔍 The architectural flaw:
 The Discovery Engine API exposes a `ModelPromptSpec.preamble` field in the summary specification. Designed for style instructions ("Be concise", "Answer in French"), this field has zero guardrails preventing a full redefinition of model behavior. The LLM treats the preamble as a top-priority system instruction — above retrieved document content.
@@ -53,10 +72,12 @@ The indexed document serves only as a trigger token. Its content is ignored by t
 → The search step is mandatory but its output is discarded by the model itself
 → Discovery Engine pricing bundles the LLM call into search cost
 
+Tomorrow, the second route. 🔜
+
 ⚠️ Disclaimer: This finding is strictly architectural exploration (educational Red Teaming). This mechanism was never exploited — neither in production nor during the hackathon — in strict compliance with @googlecloud's Terms of Service and the competition's integrity.
 
-Full source code and technical breakdown:
-🔗 https://github.com/pironjulien/trinity-route-discovery
+📖 Backstory: https://devpost.com/software/trinity-digital-natural-selection
+🔗 Source code: https://github.com/pironjulien/trinity-route-discovery
 
 @googlecloud @GoogleCloudTech @GoogleDevs @GeminiApp
-#RedTeaming #GoogleCloud #VertexAI #GenAI #Architecture #CyberSecurity #Hackathon
+#RedTeaming #GoogleCloud #VertexAI #GenAI #Architecture #CyberSecurity #Trinity
